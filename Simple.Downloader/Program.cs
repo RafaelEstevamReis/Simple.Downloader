@@ -10,8 +10,6 @@ namespace Simple.Downloader
         static WebClient wc;
         static void Main(string[] args)
         {
-            args = new string[] { "list.txt" };
-
             if (args.Length == 0)
             {
                 Console.WriteLine("Usage: Supply one or more list of files");
@@ -71,7 +69,7 @@ namespace Simple.Downloader
                 return;
             }
 
-                Console.Write($">             0%");
+            Console.Write($">             0%");
 
             downloading = true;
             percent = -1;
